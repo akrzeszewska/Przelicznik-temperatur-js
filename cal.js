@@ -7,4 +7,12 @@ function submitFunction() {
     var kelvin_degrees=celsius_degrees+273.15;
     document.getElementById("kelvin_degrees").innerHTML=kelvin_degrees;
  }
- 
+ const type_degrees = true;
+
+if (type_degrees) {
+    if (type_degrees === "Celcjusza") {
+        function submitFunction() {
+  
+            var celsius_degrees=parseInt(document.getElementById("celsius_degrees").value);
+            var fahrenheit_degrees=celsius_degrees+32;
+        }}}
