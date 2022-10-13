@@ -6,26 +6,20 @@
     <script src="cal.js"></script>
 	</head>
 	<body>
-		Stopnie Celcjusza <input type="number" id="celsius_degrees"><br> 
-		<input type="button" id="buttonsprawdz" onclick="submitFunction()" value="Sprawdź"><br><br>
-        Stopnie Fahrenheita: <div id="fahrenheit_degrees"></div>
-        Stopnie Kelwina: <div id="kelvin_degrees"></div><br><br><hr>
-
-		<label for="type_degrees">Stopnie</label>
+		
+		<div class="input text">
+		<label for="degrees">Stopnie</label>
           <select id="type_degrees">
             <option value="Celsius">Celcjusza</option>
             <option value="Fahrenheit">Fahrenheita</option>
             <option value="Kelvin">Kelvina</option>
-          </select>
-			<input type="number" id="value_degrees"><br><br>
-				<input type="button" id="buttonzamien" onclick="submitFunction()" value="Zamień na"><br><br>
-		<label for="type_degrees">Stopnie</label>
-          <select id="type_degrees">
-            <option value="Celsius">Celcjusza</option>
-            <option value="Fahrenheit">Fahrenheita</option>
-            <option value="Kelvin">Kelvina</option>
-          </select>
-		  <input type="number" id="wynik" disabled>
+          </select></div>
+			Ilość <input type="number" id="value_degrees"><br><br>
+				<input type="button" id="buttonprzelicz" onclick="submitFunction()" value="Przelicz"><br><br>
+				Stopnie Celcjusza: <div id="celsius_degrees"></div>
+				Stopnie Fahrenheita: <div id="fahrenheit_degrees"></div>
+				Stopnie Kelwina: <div id="kelvin_degrees"></div><br><br><hr>
+		
 
     </body>
 </html>
