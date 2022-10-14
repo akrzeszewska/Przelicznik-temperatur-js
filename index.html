@@ -4,22 +4,28 @@
 	<meta charset="utf-8">
 	<title>Calculator</title>
     <script src="cal.js"></script>
+	<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		
-		<div class="input text">
+	<div id="calculator">
+		<div class="image">
+		<div class="type">
 		<label for="degrees">Stopnie</label>
-          <select id="type_degrees">
+            <select id="type_degrees">
             <option value="Celsius">Celcjusza</option>
             <option value="Fahrenheit">Fahrenheita</option>
             <option value="Kelvin">Kelvina</option>
-          </select></div>
-			Ilość <input type="number" id="value_degrees"><br><br>
-				<input type="button" id="buttonprzelicz" onclick="submitFunction()" value="Przelicz"><br><br>
-				Stopnie Celcjusza: <div id="celsius_degrees"></div>
-				Stopnie Fahrenheita: <div id="fahrenheit_degrees"></div>
-				Stopnie Kelwina: <div id="kelvin_degrees"></div><br><br><hr>
-		
+            </select></div><br>
+		<div class="input_text">
+			Ilość <input type="number" id="value_degrees">
+		<br><br>
+			<div class="result">
+				<input type="button" id="buttonprzelicz" onclick="submitFunction()" value="Przelicz"></div><br><br>
+			    Stopnie Celcjusza: <div id="celsius_degrees"></div>
+			    Stopnie Fahrenheita: <div id="fahrenheit_degrees"></div>
+			    Stopnie Kelwina: <div id="kelvin_degrees"></div>
+            </div>
+	</div></div>	
 
     </body>
 </html>
