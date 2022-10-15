@@ -1,29 +1,20 @@
 function submitFunction() {
-    if (type_degrees === "Celcjusza") {
-    var celsius_degrees=Number(document.getElementById("value_degrees").value);
-    document.getElementById("value_degrees").innerHTML=celsius_degrees;
-    var fahrenheit_degrees=value_degrees+32;
-    var kelvin_degrees=value_degrees+273.15;}
-
-
-   else if (type_degrees === "Fahrenheita"){
-    var celsius_degrees=value_degrees-17.7777778;
-    var fahrenheit_degrees=parseInt(document.getElementById("value_degrees").value);
-    var kelvin_degrees=value_degrees+255.372222;}
-
-
-   else if (type_degrees === "Kelvina"){
-    var celsius_degrees=value_degrees-273.15;
-    var fahrenheit_degrees=value_degrees-459.67;
-    var kelvin_degrees=parseInt(document.getElementById("value_degrees").value);
-   }
-
-
-
-    //var celsius_degrees=parseInt(document.getElementById("celsius_degrees").value);
-    //var kelvin_degrees=celsius_degrees+273.15;
-    //document.getElementById("kelvin_degrees").innerHTML=kelvin_degrees;
+    var value=Number(document.getElementById("value_degrees").value);
+    var type_degrees=document.getElementById("type_degrees").value;
+    
+    if (type_degrees == "Celsius") {
+        document.getElementById("celsius_degrees").innerText = value;
+        document.getElementById("fahrenheit_degrees").innerText = value+32;
+        document.getElementById("kelvin_degrees").innerText = value+273.15;
+    }
+    if (type_degrees == "Fahrenheit") {
+        document.getElementById("celsius_degrees").innerText = value-17.7777778;
+        document.getElementById("fahrenheit_degrees").innerText = value;
+        document.getElementById("kelvin_degrees").innerText = value+255.372222;
+    }
+    if (type_degrees == "Kelvin") {
+        document.getElementById("celsius_degrees").innerText = value-273.15;
+        document.getElementById("fahrenheit_degrees").innerText = value-459.67;
+        document.getElementById("kelvin_degrees").innerText = value;
+    }  
 }
-
-
-
