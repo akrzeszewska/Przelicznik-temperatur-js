@@ -1,4 +1,4 @@
-Kalkulator do konwersji temperatury pozwalala przeliczyć wartości temperatur:
+Calculator1 to przelicznik wartości temperatur:
 -Celcjusza
 -Fahrenheita
 -Kelvina.
