@@ -2,6 +2,7 @@
 <html lang="pl-PL">
 	<head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1" user-scalable="yes">
 	<title>Calculator</title>
     <script src="cal.js"></script>
 	<link rel="stylesheet" href="style.css">
@@ -17,15 +18,17 @@
             <option value="Kelvin">Kelvina</option>
             </select></div><br>
 		<div class="input_text">
-			Ilość <input type="number" id="value_degrees">
-		<br><br>
+			Ilość <input type="number" id="value_degrees"> 
+		<br><br></div>
 			<div class="result">
-				<input type="button" id="buttonprzelicz" onclick="submitFunction()" value="Przelicz"></div><br><br>
+				<input type="button" id="buttonprzelicz" onclick="submitFunction()" value="Przelicz"><br><br>
 			    Stopnie Celcjusza: <div id="celsius_degrees"></div>
-			    Stopnie Fahrenheita: <div id="fahrenheit_degrees"></div>
+			    Stopnie Fahrenheita: <div id="fahrenheit_degrees"></div> 
 			    Stopnie Kelwina: <div id="kelvin_degrees"></div>
             </div>
-	</div></div>	
-
+			<p> Historia wyników </p>
+		<div id="history"></div>
+		</div>
+	</div>	
     </body>
 </html>
