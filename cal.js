@@ -3,6 +3,7 @@ const far = [];
 const kel = [];
 var id = 0;
 
+
 function submitFunction() {
     var value=Number(document.getElementById("value_degrees").value);
     var type_degrees=document.getElementById("type_degrees").value;
@@ -35,4 +36,10 @@ function submitFunction() {
     var historyParser = 'Stopnie Celcjusza: ' + cel[0] + ", Stopnie Farenheita: " + far[0] + ", Stopnie Kelwina: " + kel[0]
     id++;
     document.getElementById("history").innerHTML += id + ") " + historyParser + "</br>";
+    // .toFixed(2);
+    // var a = cel.toString();
+    //var b = a.toFixed(2);
+
+
+
 }
