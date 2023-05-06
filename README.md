@@ -1,4 +1,4 @@
-Calculator1 to przelicznik wartości temperatur:
+Przelicznik temperatur wartości temperatur:
 -Celcjusza
 -Fahrenheita
 -Kelvina.
